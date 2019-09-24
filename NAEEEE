@@ -1,0 +1,15 @@
+	void reverse(char myUni[]){
+	
+		int L = strlen(myUni);
+		L=L-1;
+		char*scr=&myUni[L];
+		for(int i=0;i<=L;i++){
+			printf("%c",*scr);
+			scr--;
+		}
+	}
+
+main(){
+	char myUni[] = "I love the RMUTL" ;
+	reverse(myUni);
+}
